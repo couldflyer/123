@@ -1,0 +1,19 @@
+html {
+  width: 80%;
+  height: 60%;
+}
+.avatar-img {
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+}
+.avatar-img img {
+    border-radius: 50%;
+}
+.avatar-text {
+    text-align: center;
+    padding-left: 40px;
+}
+.large {
+    font-size: 25px
+}
