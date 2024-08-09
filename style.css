@@ -1,3 +1,6 @@
+html {
+  background: linear-gradient(90deg, rgba(169,219,212,1) 22%, rgba(102,198,233,1) 100%); !important;
+}
 .avatar-img {
     display: flex;
     align-items: center;
@@ -12,4 +15,13 @@
 }
 .large {
     font-size: 25px
+}
+.center {
+	text-align: center;
+}
+.blockquote {
+	border-left: 4px solid #333;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
 }
