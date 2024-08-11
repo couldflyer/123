@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f0f0f0"/>
+    <script src=pxtovw.js></script>
     <link rel="stylesheet" href="style.css">
     <title>Liuts制作</title>
     <!-- IE Out -->
@@ -20,15 +21,34 @@
 </head>
 
 <body>
-    <h1 style="text-align: center;">Liuts真帅</h1>
+    <h1 class="center">Liuts最帅</h1>
+    <div id="time">
+        <div id="time1">
+            <script>
+                (function(){function f(i){return i<10?'0'+i:i;}function s(){const D=new Date();
+                document.getElementById('time1').innerHTML=f(D.getHours())+':'+f(D.getMinutes())+':'+f(D.getSeconds());}
+                s();setInterval(function(){s();},1000);})();
+            </script>
+        </div>
+        <div id="time2">
+            <script>
+                (function(){function f(i){return i<10?'0'+i:i;}function s(){const D=new Date();
+                week=f(D.getDay());
+                week = "日一二三四五六".charAt(week);
+                week="星期"+week;
+                document.getElementById('time2').innerHTML=f(D.getFullYear())+'/'+f(D.getMonth()+1)+'/'+f(D.getDate())+'&ensp;'+week;}
+                s();setInterval(function(){s();},1000);})();
+            </script>
+       </div>
+    </div>
     <div class="avatar-img">
         <img src="img/img.jpg" alt="img" width="180" height="180">
         <div class="avatar-text">  
-            <span class="large">Liuts测试HTML的专用</span>
+            <span class="large">Liuts测试HTML专用</span>
         </div>
     </div>
     <div class="center">
-    	<blockquote class="blockquote">这个只是Liuts用来学习html的网站</blockquote>
+    	<blockquote class="blockquote">这个只是Liuts用来测试html的网站</blockquote>
     </div>
 </body>
 </html>
