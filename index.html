@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f0f0f0"/>
-    <script src=pxtovw.js></script>
     <link rel="stylesheet" href="style.css">
     <title>Liuts制作</title>
+    <script src=pxtovw.js></script>
     <!-- IE Out -->
     <script>
         if ( /*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href =
@@ -40,6 +40,11 @@
                 s();setInterval(function(){s();},1000);})();
             </script>
        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="bingSearchBox" placeholder="搜索..." autocomplete="off">
+        <button id="searchButton">搜索</button>
+    <script src=bingsearch.js></script>
     </div>
     <div class="avatar-img">
         <img src="img/img.jpg" alt="img" width="180" height="180">

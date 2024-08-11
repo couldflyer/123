@@ -8,14 +8,14 @@ h1 {
 .avatar-img {
     display: flex;
     align-items: center;
-    padding-left: 180px;
+    margin-left: 180px;
 }
 .avatar-img img {
-    border-radius: 50%;
+    border-radius: 60%;
 }
 .avatar-text {
     text-align: center;
-    padding-left: 40px;
+    padding-left: 3vw;
 }
 .large {
     font-size: 25px;
@@ -25,10 +25,11 @@ h1 {
 }
 .blockquote {
 	border-left: 4px solid #333;
-    padding: 25px 25px;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.8);
     display: inline-block;
 }
+/* 时间 */
 #time {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.3);
     text-align: center;
@@ -38,4 +39,38 @@ h1 {
 }
 #time2 {
     font-size: 25px;
+}
+/* 搜索框 */
+.search-container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+}
+#bingSearchBox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); /* 透明背景 */
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+#bingSearchBox:focus {
+    background-color: rgba(255, 255, 255, 0.8); /* 聚焦时减少透明度 */
+}
+#searchButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+#searchButton:hover {
+    color: #0078d4; /* Bing 的蓝色 */
 }
