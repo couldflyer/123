@@ -1,5 +1,5 @@
 // 假设设计宽度为 1440px
-const designWidth = 960;
+const designWidth = 360
 
 // 获取当前屏幕的宽度
 const currentWidth = window.innerWidth;
@@ -20,7 +20,7 @@ function applyPxToVw() {
         const computedStyle = window.getComputedStyle(element);
 
         // 遍历所有可能包含 px 值的样式属性
-        ['padding', 'margin', 'left', 'top', 'right', 'bottom'].forEach(property => {
+        ['padding', 'margin', 'left', 'top', 'right', 'bottom', 'font-size'].forEach(property => {
             let pxValue = computedStyle.getPropertyValue(property);
             
             if (pxValue.includes('px')) {
