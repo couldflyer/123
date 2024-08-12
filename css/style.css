@@ -3,7 +3,7 @@ html {
     background: linear-gradient(90deg, rgba(169,219,212,1) 22%, rgba(102,198,233,1) 100%); !important;
 }
 h1 {
-    font-size: 50px;
+    font-size: 45px;
 }
 .avatar-img {
     display: flex;
@@ -47,7 +47,7 @@ h1 {
     margin: 20px auto;
 }
 #bingSearchBox {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -61,12 +61,13 @@ h1 {
 }
 #searchButton {
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 0;
     bottom: 0;
-    padding: 0 15px;
-    background-color: transparent;
-    border: none;
+    border-radius: 5px;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
     cursor: pointer;
     font-size: 16px;
     color: #333;
