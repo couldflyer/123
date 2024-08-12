@@ -20,7 +20,7 @@ function applyPxToVw() {
         const computedStyle = window.getComputedStyle(element);
 
         // 遍历所有可能包含 px 值的样式属性
-        ['padding', 'margin', 'left', 'top', 'right', 'bottom', 'font-size', 'gap'].forEach(property => {
+        ['padding', 'margin', 'left', 'top', 'right', 'bottom', 'font-size', 'padding-left'].forEach(property => {
             let pxValue = computedStyle.getPropertyValue(property);
             
             if (pxValue.includes('px')) {

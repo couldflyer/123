@@ -1,21 +1,11 @@
-html {
-    color: #333;
-    background: linear-gradient(90deg, rgba(169,219,212,1) 22%, rgba(102,198,233,1) 100%); !important;
+html body {
+    color: #303030;
+    background: linear-gradient(90deg,#ddd 0%,#ccc 100%); !important
 }
 h1 {
-    font-size: 45px;
-}
-.avatar-img {
     display: flex;
-    align-items: center;
-    margin-left: 180px;
-}
-.avatar-img img {
-    border-radius: 60%;
-}
-.avatar-text {
-    text-align: center;
-    padding-left: 3vw;
+    justify-content: center;
+    font-size: 45px;
 }
 .large {
     font-size: 25px;
@@ -23,7 +13,19 @@ h1 {
 .center {
 	text-align: center;
 }
-.blockquote {
+/* 头像 */
+#avatar {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+#avatar img {
+    border-radius: 50%;
+}
+#avatar-text {
+    font-size: 18px;
+}
+#blockquote {
 	border-left: 4px solid #333;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -51,7 +53,7 @@ h1 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5); /* 透明背景 */
+    background-color: rgba(255, 255, 255, 0.5);
     outline: none;
     font-size: 16px;
     color: #333;
@@ -73,5 +75,18 @@ h1 {
     color: #333;
 }
 #searchButton:hover {
-    color: #0078d4; /* Bing 的蓝色 */
+    color: #0078d4;
+}
+/* 诗词 */
+#poem {
+    text-align: center;
+    height: 8vh;
+}
+#poem-sentence {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
