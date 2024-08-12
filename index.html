@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Liuts制作</title>
-    <script src=js/pxtovw.js></script>
+    <script src="js/pxtovw.js"></script>
+    <script src="js/poem.js"></script>
     <!-- IE Out -->
     <script>
         if ( /*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href =
@@ -22,7 +23,10 @@
 </head>
 
 <body>
-    <h1 class="center">Liuts最帅</h1>
+    <h1>Liuts最帅</h1>
+    <div id="poem">
+        <div id="poem-sentence">正在加载今日诗词....</div>
+    </div>
     <div id="time">
         <div id="time1">
             <script>
@@ -47,14 +51,12 @@
         <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
     <script src=js/bingsearch.js></script>
     </div>
-    <div class="avatar-img">
-        <a href="https://blog.333375.xyz/" target="_blank"><img src="img/avatar.jpg" alt="img" width="180px" height="180px"></a>
-        <div class="avatar-text">  
-            <span class="large">Liuts测试HTML专用</span>
-        </div>
+    <div id="avatar">
+        <a href="https://blog.333375.xyz/" target="_blank"><img src="img/avatar.jpg" alt="img" width="130vw" height="130vw"></a>
+        <div id="avatar-text">Liuts测试html专用</div>
     </div>
     <div class="center">
-    	<blockquote class="blockquote">这个只是Liuts用来测试html的网站</blockquote>
+    	<blockquote id="blockquote">这个只是Liuts用来测试html的网站</blockquote>
     </div>
 </body>
 </html>
