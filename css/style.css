@@ -91,6 +91,7 @@ html body {
     border-radius: 5px;
 }
 #otherpage {
+    background-color: transparent;
     display: flex;
     gap: 10px;
 }
