@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX 示例</title>
+</head>
+<body>
+
+<button onclick="loadContent('content1.html')">显示内容1</button>
+<button onclick="loadContent('content2.html')">显示内容2</button>
+<div id="content-area"></div>
+
+<script>
+    function loadContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content-area').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('加载内容时出错:', error);
+            });
+    }
+</script>
+
+</body>
+</html>

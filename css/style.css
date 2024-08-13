@@ -93,3 +93,12 @@ h1 {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+#page1 {
+    margin-left: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 0px 50px;
+    border-radius: 5px;
+}
