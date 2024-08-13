@@ -16,6 +16,7 @@ h1 {
 /* 头像 */
 #avatar {
     align-items: center;
+    justify-content: center;
     display: flex;
     gap: 10px;
 }
