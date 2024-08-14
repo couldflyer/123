@@ -1,5 +1,5 @@
 body {
-    color: #303030;
+    color: #333;
     display: grid;
     place-content: center;
     height-min: 100vh;
@@ -34,7 +34,7 @@ body {
     padding: 2.78vw 5.56vw;
     background-color: rgba(255, 255, 255, 0.8);
     display: inline-block;
-    font-size: 5.56vw;
+    font-size: 5vw;
 }
 /* 时间 */
 #time {
@@ -42,25 +42,25 @@ body {
     text-align: center;
 }
 #time1 {
-    font-size: 12.5vw;
+    font-size: 10vw;
 }
 #time2 {
-    font-size: 6.94vw;
+    font-size: 7vw;
 }
 /* 搜索框 */
 .search-container {
     position: relative;
     width: 80vw;
-    margin: 5.56vw auto;
+    margin: 5.5vw auto;
 }
 #bingSearchBox {
     width: 80%;
     padding: 2.78vw;
     border: 0.28vw solid #ccc;
-    border-radius: 1.39vw;
+    border-radius: 1.4vw;
     background-color: rgba(255, 255, 255, 0.5);
     outline: none;
-    font-size: 4.44vw;
+    font-size: 4.5vw;
     color: #333;
 }
 #bingSearchBox:focus {
@@ -68,7 +68,7 @@ body {
 }
 #searchButton {
     position: absolute;
-    right: -1.39vw;
+    right: -1.5vw;
     top: 0;
     bottom: 0;
     border-radius: 1.39vw;
@@ -76,11 +76,15 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     border: 0.28vw solid #ccc;
     cursor: pointer;
-    font-size: 4.44vw;
+    font-size: 4.5vw;
     color: #333;
 }
 #searchButton:hover {
     color: #0078d4;
+}
+#searchButton i {
+    display: flex;
+    place-content: center;
 }
 /* 诗词 */
 #poem {
@@ -89,11 +93,11 @@ body {
     margin: 7vh auto 3vh;
 }
 #poem-sentence {
-    font-size: 5vw;
+    font-size: 4.5vw;
     font-weight: bolder;
     padding: 3vw;
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(99, 99, 99, 0.2) 0 0.56vw 2.22vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
 }
 /* ajax页面 */
@@ -102,11 +106,12 @@ body {
     display: flex;
     gap: 2vw;
     place-content: center;
+    color: #333;
 }
 #otherpage button {
     margin-top: 3vw;
     border: 0;
-    box-shadow: rgba(99, 99, 99, 0.2) 0 0.56vw 2.22vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-size: 4.5vw;
     padding: 2.78vw 4.17vw;
     border-radius: 5px;
