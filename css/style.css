@@ -2,11 +2,12 @@ body {
     color: #303030;
     display: grid;
     place-content: center;
-    height: 100vh;
+    height-min: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
     margin: 0;
     grid-auto-rows: min-content;
     grid-template-columns: auto;
-    gap: 2.78vw;
     background: linear-gradient(90deg,#ddd 0%,#ccc 100%) !important;
 }
 .center {
@@ -20,9 +21,9 @@ body {
     gap: 2.78vw;
 }
 #avatar img {
-    height: 20vh;
-    width: 40vw;
     border-radius: 50%;
+    height: 40vw;
+    width: 40vw;
 }
 #avatar-text {
     font-size: 5vw;
@@ -37,7 +38,7 @@ body {
 }
 /* 时间 */
 #time {
-    text-shadow: 0.56vw 0.56vw 1.11vw rgba(0, 0, 0, 0.5), -0.28vw -0.28vw 0.56vw rgba(255, 255, 255, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 #time1 {
@@ -49,7 +50,7 @@ body {
 /* 搜索框 */
 .search-container {
     position: relative;
-    width: 83.3vw;
+    width: 80vw;
     margin: 5.56vw auto;
 }
 #bingSearchBox {
@@ -83,30 +84,30 @@ body {
 }
 /* 诗词 */
 #poem {
-    text-align: center;
-    margin: 2.78vw;
+    display: flex;
+    place-content: center;
+    margin: 7vh auto 3vh;
 }
 #poem-sentence {
-    font-size: 4.44vw;
+    font-size: 5vw;
     font-weight: bolder;
-    padding: 2.78vw;
-    display: inline-block;
+    padding: 3vw;
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: rgba(99, 99, 99, 0.2) 0 0.56vw 2.22vw;
-    border-radius: 1.39vw;
+    border-radius: 5px;
 }
-/* AJAX页面 */
+/* ajax页面 */
 #otherpage {
     background-color: transparent;
     display: flex;
-    gap: 2.22vw;
+    gap: 2vw;
     place-content: center;
 }
 #otherpage button {
-    margin-top: 2.78vw;
+    margin-top: 3vw;
     border: 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0 0.56vw 2.22vw;
-    font-size: 4.17vw;
+    font-size: 4.5vw;
     padding: 2.78vw 4.17vw;
-    border-radius: 1.39vw;
+    border-radius: 5px;
 }
