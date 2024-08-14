@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PX to VW 转换工具</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+        input[type="number"] {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #0078d4;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #href {
+            margin-top: 10px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>PX to VW 转换工具</h2>
+        <input type="number" id="pxValue" placeholder="输入PX值">
+        <input type="number" id="viewportWidth" placeholder="输入屏幕宽度">
+        <button onclick="convertPxToVw()">转换</button>
+        <div class="result" id="result"></div>
+        <a href="wpx.html" id="href">屏幕宽度检测工具</a><br>
+    </div>
+
+    <script>
+        function pxToVw(px, viewportWidth = 360) {
+            return (px / viewportWidth) * 100;
+        }
+
+        function convertPxToVw() {
+            const pxValue = document.getElementById('pxValue').value;
+            const viewportWidth = document.getElementById('viewportWidth').value || 360;
+            if (pxValue === '') {
+                alert('请输入PX值');
+                return;
+            }
+            const vwValue = pxToVw(pxValue, viewportWidth);
+            document.getElementById('result').innerText = `${pxValue}px = ${vwValue.toFixed(2)}vw`;
+        }
+    </script>
+</body>
+</html>
