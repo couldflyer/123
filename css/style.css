@@ -32,13 +32,13 @@ body {
 #blockquote {
     border-left: 1.11vw solid #333;
     padding: 2.78vw 5.56vw;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, .8);
     display: inline-block;
     font-size: 5vw;
 }
 /* 时间 */
 #time {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.3);
+    text-shadow: .28vw .56vw 1.11vw rgba(0, 0, 0, .5), -.28px -.28px .56px rgba(255, 255, 255, .3);
     text-align: center;
 }
 #time1 {
@@ -56,15 +56,15 @@ body {
 #bingSearchBox {
     width: 80%;
     padding: 2.78vw;
-    border: 0.28vw solid #ccc;
+    border: .28vw solid #ccc;
     border-radius: 1.4vw;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, .5);
     outline: none;
     font-size: 4.5vw;
     color: #333;
 }
 #bingSearchBox:focus {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, .8);
 }
 #searchButton {
     position: absolute;
@@ -73,8 +73,8 @@ body {
     bottom: 0;
     border-radius: 1.39vw;
     padding: 3.33vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 0.28vw solid #ccc;
+    background-color: rgba(255, 255, 255, .5);
+    border: .28vw solid #ccc;
     cursor: pointer;
     font-size: 4.5vw;
     color: #333;
@@ -96,9 +96,9 @@ body {
     font-size: 4.5vw;
     font-weight: bolder;
     padding: 3vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: rgba(99, 99, 99, .2) 0 .6vw 2.2vw 0;
+    border-radius: 1.4vw;
 }
 /* ajax页面 */
 #otherpage {
@@ -111,8 +111,8 @@ body {
 #otherpage button {
     margin-top: 3vw;
     border: 0;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, .2) 0 .6vw 2.2vw 0;
     font-size: 4.5vw;
     padding: 2.78vw 4.17vw;
-    border-radius: 5px;
+    border-radius: 1.4vw;
 }
