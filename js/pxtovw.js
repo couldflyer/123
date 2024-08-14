@@ -1,5 +1,5 @@
 // 假设设计宽度为 1440px
-const designWidth = 1152.58px
+const designWidth = 1152.58;
 
 // 获取当前屏幕的宽度
 const currentWidth = window.innerWidth;
