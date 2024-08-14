@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>检测屏幕宽度</title>
+    <style>
+        /* 添加一些样式让屏幕宽度显示得更明显 */
+        #screenWidthDisplay {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 用于显示屏幕宽度的元素 -->
+<div id="screenWidthDisplay">当前屏幕宽度为: </div>
+
+<script>
+    // 获取屏幕宽度并显示在页面上
+    function displayScreenWidth() {
+        const screenWidth = window.innerWidth;
+        document.getElementById('screenWidthDisplay').innerText = "当前屏幕宽度为: " + screenWidth + "px";
+    }
+
+    // 初始显示屏幕宽度
+    displayScreenWidth();
+
+    // 监听屏幕尺寸变化，并更新显示
+    window.addEventListener('resize', displayScreenWidth);
+</script>
+
+</body>
+</html>
