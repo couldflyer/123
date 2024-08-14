@@ -3,4 +3,4 @@
 ```bash
 wget -N https://raw.gitmirror.com/couldflyer/123/main/gitpush.sh && chmod +x gitpush.sh && ./gitpush.sh
 ```
-以后使用的话通过 `./gitpush.sh` 即可使用
+以后使用的话通过 `./gitpush.sh` 即可使用，上传时必须有修改
