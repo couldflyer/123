@@ -2,10 +2,10 @@ body {
     color: #333;
     display: grid;
     place-content: center;
-    height-min: 100vh;
+    min-height: 90vh;
     overflow: auto;
     overflow-x: hidden;
-    margin: 0;
+    margin: 5vh auto;
     grid-auto-rows: min-content;
     grid-template-columns: auto;
     background: linear-gradient(90deg,#ddd 0%,#ccc 100%) !important;
@@ -18,49 +18,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.78vw;
+    gap: 10px;
 }
 #avatar img {
     border-radius: 50%;
-    height: 35vw;
-    width: 35vw;
+    height: 120px;
+    width: 120px;
 }
 #avatar-text {
-    font-size: 4vw;
+    font-size: 14px;
 }
 /* 悄悄话 */
 #blockquote {
-    border-left: 1.11vw solid #333;
-    padding: 2.78vw 5.56vw;
+    border-left: 4px solid #333;
+    padding: 10px 20px;
     background-color: rgba(255, 255, 255, .8);
     display: inline-block;
-    font-size: 4vw;
+    font-size: 14px;
 }
 /* 时间 */
 #time {
-    text-shadow: .28vw .56vw 1.11vw rgba(0, 0, 0, .5), -.28px -.28px .56px rgba(255, 255, 255, .3);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, .5), -1px -1px 2px rgba(255, 255, 255, .3);
     text-align: center;
 }
 #time1 {
-    font-size: 8vw;
+    font-size: 29px;
 }
 #time2 {
-    font-size: 5vw;
+    font-size: 18px;
 }
 /* 搜索框 */
 .search-container {
     position: relative;
-    width: 80vw;
-    margin: 5.5vw auto;
+    width: 288px;
+    margin: 20px auto;
 }
 #bingSearchBox {
     width: 80%;
-    padding: 2.78vw;
-    border: .28vw solid #ccc;
-    border-radius: 1.4vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, .5);
     outline: none;
-    font-size: 4vw;
+    font-size: 14px;
     color: #333;
 }
 #bingSearchBox:focus {
@@ -68,15 +68,15 @@ body {
 }
 #searchButton {
     position: absolute;
-    right: -1.8vw;
+    right: -7px;
     top: 0;
     bottom: 0;
-    border-radius: 1.39vw;
-    padding: 3.33vw;
+    border-radius: 5px;
+    padding: 12px;
     background-color: rgba(255, 255, 255, .5);
-    border: .28vw solid #ccc;
+    border: 1px solid #ccc;
     cursor: pointer;
-    font-size: 4vw;
+    font-size: 14px;
     color: #333;
 }
 #searchButton:hover {
@@ -89,30 +89,32 @@ body {
 /* 诗词 */
 #poem {
     display: flex;
-    place-content: center;
-    margin: 7vh auto 3vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5vw;
 }
 #poem-sentence {
-    font-size: 4vw;
+    font-size: 14px;
     font-weight: bolder;
-    padding: 3vw;
+    padding: 11px;
     background-color: rgba(255, 255, 255, .5);
-    box-shadow: rgba(99, 99, 99, .2) 0 .6vw 2.2vw 0;
-    border-radius: 1.4vw;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+    border-radius: 5px;
 }
 /* ajax页面 */
 #otherpage {
     background-color: transparent;
     display: flex;
-    gap: 2vw;
-    place-content: center;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
     color: #333;
 }
 #otherpage button {
-    margin-top: 3vw;
+    margin-top: 11px;
     border: 0;
-    box-shadow: rgba(99, 99, 99, .2) 0 .6vw 2.2vw 0;
-    font-size: 4vw;
-    padding: 2.78vw 4.17vw;
-    border-radius: 1.4vw;
+    box-shadow: rgba(99, 99, 99, .2) 0 2px 8px 0;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
