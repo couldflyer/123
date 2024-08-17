@@ -28,13 +28,15 @@ function loadContent(url, button) {
         contentArea.appendChild(iframe);
     }
 
-    // 检查当前 iframe 是否已经显示内容
+    // 当前显示的内容 URL
+    const currentUrl = iframe.getAttribute('data-url');
+
     if (button.getAttribute('data-loaded') === 'true') {
-        // 内容已经加载，隐藏 iframe 并重置状态
+        // 如果点击同一个按钮，则隐藏内容
         iframe.style.display = 'none';
         button.setAttribute('data-loaded', 'false');
     } else {
-        // 内容尚未加载，显示 iframe 并加载内容
+        // 切换内容
         const data = contentCache[url];
         if (data) {
             const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
@@ -42,6 +44,14 @@ function loadContent(url, button) {
             iframeDoc.write(data);
             iframeDoc.close();
             iframe.style.display = 'block';
+            iframe.setAttribute('data-url', url); // 更新当前显示的内容 URL
+
+            // 更新所有按钮的状态
+            document.querySelectorAll('#otherpage button').forEach(btn => {
+                btn.setAttribute('data-loaded', 'false');
+            });
+
+            // 仅设置当前按钮为已加载
             button.setAttribute('data-loaded', 'true');
         } else {
             console.error('内容尚未预加载');
