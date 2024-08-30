@@ -5,5 +5,5 @@ wget -N https://raw.gitmirror.com/couldflyer/123/main/gitpush.sh && chmod +x git
 ```
 以后使用的话通过 `./gitpush.sh` 即可使用，上传时必须有修改
 
-又搞了一个px to vw工具
-访问 https://liuts.paba.se/pxtovw.html 即可使用
+又搞了一个PX to VW工具
+访问 https://liuts.paba.se/pxtovw/ 即可使用
